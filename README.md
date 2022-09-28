@@ -22,6 +22,5 @@ For instance, files/castle1.txt is :
     402
     131
    
-Which produces :
-
+Which (when using an edge length of 6 and 1 color) produces :
 ![](castle1.jpg)
