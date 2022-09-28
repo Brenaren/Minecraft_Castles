@@ -24,3 +24,6 @@ For instance, files/castle1.txt is :
    
 Which (when using an edge length of 6 and 1 color) produces :
 ![](castle1.jpg)
+
+When running the script with 6 and 3 you get this from files/castle3.txt input :
+![](castle3.jpg)
