@@ -8,23 +8,14 @@
 
 make
 
-if [ "$#" -lt 4 ]; then
-	echo "usage: RunGenerator.sh <input_file> <output_file> <edge_length (min 5 max 10)> <colors (min 1 max 7)>"
+if [ "$#" -lt 2 ]; then
+	echo "usage: RunGenerator.sh <edge_length (min 5 max 10)> <colors (min 1 max 7)>"
 	exit
 fi
 
-INFILE=$1
-OUTFILE=$2
-TYPE=${OUTFILE##*.}
-
-shift 2
-
-echo "./bin/jgraphGenerator $INFILE $@ > tmp.txt"
-./bin/jgraphGenerator $INFILE $@ > tmp.txt
-
-if [ $TYPE == "pdf" ]; then
-	./jgraph -P tmp.txt | ps2pdf - $OUTFILE
-else
-	./jgraph -P tmp.txt | ps2pdf - | convert -density 300 - -quality 100 $OUTFILE
-fi;
+for i in 1 2 3 4 5
+	./bin/jgraphGenerator /files/castle$i.txt $@ > tmpi.txt
+	./jgraph -P tmp$i.txt | ps2pdf - castle$i.pdf
+	./jgraph -P tmp$i.txt | ps2pdf - | convert -density 300 - -quality 100 castle$i.jpg
+done
 
