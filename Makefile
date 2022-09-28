@@ -2,6 +2,6 @@ all:
 	gcc -o ./bin/jgraphGenerator ./src/jgraphGenerator.cpp -lstdc++
 
 clean :	
-	rm ./bin/* *.jpg *.txt
+	rm ./bin/* ./jpg/* ./pdf/*
 
 
