@@ -24,3 +24,4 @@ For instance, files/castle1.txt is :
    
 Which produces :
 
+![](castle1.jpg)
