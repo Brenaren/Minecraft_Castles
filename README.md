@@ -19,6 +19,8 @@ The program does not generate the input files, but they are very simple to creat
 For instance, files/castle1.txt is :
 
     131
-    501
+    402
     131
    
+Which produces :
+
