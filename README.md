@@ -8,14 +8,9 @@
 This is a program to generate square grids of Minecraft castle blueprints. It reads in from a .txt file populated with numbers 0 - 5.
 The numbers are as follows :
 
-0 Empty square of dimentions edge X edge
-
-1 Tower: This will place a square tower of the given edge length.
-
-2 Vertical Wall: This will place a wall that blocks horizontal movement.
-
-3 Horizontal Wall: This will place a wall that blocks vertical movement.
-
-4 Vertical Gate: This places a solid vertical wall signifying a gate in the wall.
-
-5 Horizontal Gate: This places a solid horizontal wall signifying a gate in the wall.
+    0 Empty square of dimentions edge X edge
+    1 Tower: This will place a square tower of the given edge length.
+    2 Vertical Wall: This will place a wall that blocks horizontal movement.
+    3 Horizontal Wall: This will place a wall that blocks vertical movement.
+    4 Vertical Gate: This places a solid vertical wall signifying a gate in the wall.
+    5 Horizontal Gate: This places a solid horizontal wall signifying a gate in the wall.
