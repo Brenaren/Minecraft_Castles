@@ -26,6 +26,7 @@ If you want to run your own .txt files you need to create the file as a matrix o
 
 Feel free to look at the example inputs in the files directory for how to format them. The program does allow for non square .txt matrices (as shown in the examples below).
 If you use your own inputs you will need to run :
+
     make
     ./bin/jgraphGenerator <input file> <edge length> <number of colors> | ./jgraph -P | ps2pdf - | convert -density 300 - -quality 100 <output file>
 
