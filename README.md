@@ -17,7 +17,10 @@ The numbers are as follows :
 
 ## Running Instruction
 
+First clone this repo to your local machine. The project assumes you have ps2pdf and convert and that they have permisions to run on pdf files.
+
 To run the examples given simply enter :
+
     sh RunGenerator.sh
 
 The shell script RunGenerator.sh does everything you need to do to generate the needed 5 output jpgs.
