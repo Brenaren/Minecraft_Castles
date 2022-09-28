@@ -178,7 +178,7 @@ void generate_castle(vector <vector <int> > BP, int edge, int num_colors) {
 
   /* We want to generate this from the bottom left to the top right. */
   for (int i = BP.size() - 1; i > -1; i--) {
-	k = 0;
+	  k = i; //This will allow for more than black to be in the first column.
     for (int j = 0; j < BP[i].size(); j++) {
       switch (BP[i][j]) {
         case 1: //Tower
