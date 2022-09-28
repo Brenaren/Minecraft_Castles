@@ -23,7 +23,7 @@ To run the examples given simply enter :
 
     sh RunGenerator.sh
 
-The shell script RunGenerator.sh does everything you need to do to generate the needed 5 output jpgs.
+The shell script RunGenerator.sh does everything you need to do to generate the needed 5 output jpgs. It stores .jpg versions in the jpg directory and pdf versions in the pdf directory.
 
 If you want to run your own .txt files you need to create the file as a matrix of the allowed inputs. If anything in the matrix is greater than 5 there will be an error and the program will exit.
 
